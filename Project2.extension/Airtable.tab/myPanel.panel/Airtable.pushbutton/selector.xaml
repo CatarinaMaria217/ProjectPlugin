@@ -1,0 +1,38 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Escolher modo"
+        Height="220" Width="380"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="O que queres ver?"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="0 0 0 20"
+                   HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="200"
+                    >
+
+            <Button x:Name="NovasBtn"
+                    Content="Novas alterações"
+                    Height="40"
+                    Margin="0 0 0 10"/>
+
+            <Button x:Name="HistoricoBtn"
+                    Content="Últimas atualizações"
+                    Height="40"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
